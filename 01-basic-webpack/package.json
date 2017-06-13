@@ -1,0 +1,26 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "browser-sync start --directory --server --files \"index.html, build/**/*\"",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "clean": "rimraf build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "browser-sync": "^2.18.12",
+    "concurrently": "^3.4.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "p5": "^0.5.11"
+  }
+}
